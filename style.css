@@ -1,12 +1,12 @@
 *:link, *:visited, *:hover, *:active, *:focus {
-  -webkit-transition:
+/*  -webkit-transition:
     color .25s linear,
     background-color 1s linear,
     border-color .25s linear;
   transition:
     color .25s linear,
     background-color 1s linear,
-    border-color .25s linear;
+    border-color .25s linear;*/
 }
 
 a:hover, a.hover, a:focus, a.focus {
@@ -14,17 +14,12 @@ a:hover, a.hover, a:focus, a.focus {
   cursor: pointer;
 }
 
-}
-.red-text {
-  color: #F03F36;
-}
-
 .red:hover div, .red.hover div {
   background-color: #F03F36;
 }
 
 .red:hover a, .red.hover a {
-  color: #F03F36 !important;
+  color: white !important;
 }
 
 .red:active div, .red.active div {
@@ -32,7 +27,7 @@ a:hover, a.hover, a:focus, a.focus {
 }
 
 .red:active a, .red.active a {
-  color: #F03F36 !important;
+  color: white !important;
 }
 
 .green:hover div, .green.hover div {
@@ -40,7 +35,7 @@ a:hover, a.hover, a:focus, a.focus {
 }
 
 .green:hover a, .green.hover a {
-  color: #8CC63F !important;
+  color: white !important;
 }
 
 .green:active div, .green.active div {
@@ -48,7 +43,7 @@ a:hover, a.hover, a:focus, a.focus {
 }
 
 .green:active a, .green.active a {
-  color: #8CC63F !important;
+  color: white !important;
 }
 
 .blue:hover div, .blue.hover div {
@@ -56,7 +51,7 @@ a:hover, a.hover, a:focus, a.focus {
 }
 
 .blue:hover a, .blue.hover a {
-  color: #1DAAE1 !important;
+  color: white !important;
 }
 
 .blue:active div, .blue.active div {
@@ -64,9 +59,8 @@ a:hover, a.hover, a:focus, a.focus {
 }
 
 .blue:active a, .blue.active a {
-  color: #1DAAE1 !important;
+  color: white !important;
 }
-
 
 .set-width {
   width: 175px;
@@ -76,9 +70,12 @@ a:hover, a.hover, a:focus, a.focus {
 li a {
   font-size: 18px !important;
   cursor: pointer;
+  z-index: 10;
 }
 
 .indicator {
   width: 100%;
-  height: 5px;
+  height: 75px;
+  margin-top: -75px;
+  z-index: 5;
 }
