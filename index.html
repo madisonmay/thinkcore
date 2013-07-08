@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      CORE
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="bootstrap-combined.min.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="flat-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('li').click(function() {
+          $('li.active').removeClass('active');
+          $(this).addClass('active');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div style="background-color: #ccc;" class="navbar-inner">
+        <div class="container">
+          <button type="button" data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a href="#" style="text-decoration: none;" class="brand">
+            CORE
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active set-width red">
+                <a href="#district-heat">
+                  District Heat
+                </a>
+                <div class="indicator">
+                </div>
+              </li>
+              <li class="set-width green">
+                <a href="#coopkot">
+                  COOPkot
+                </a>
+                <div class="indicator">
+                </div>
+              </li>
+              <li class="set-width blue">
+                <a href="#sensitize">
+                  Sensitize
+                </a>
+                <div class="indicator">
+                </div>
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="set-width">
+                <img src="/images/settings.png" style="margin-top: 25px; cursor: pointer;">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
